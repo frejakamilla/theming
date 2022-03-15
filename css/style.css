@@ -1,0 +1,68 @@
+:root {
+  /* Global Tokens */
+  --white: #fdfdfd;
+
+  --gray-800: #0f172a;
+  --gray-400: #334155;
+
+  --purple-50: hsl(264deg 100% 97%);
+  --purple-200: hsl(264deg 100% 85%);
+  --purple-500: #5000ca;
+
+  --blue-50: #c8faf7;
+  --blue-100: #94f5f5;
+  --blue-800: #00355e;
+
+  /* Alias Tokens */
+  --color-text-base: ;
+  --color-text-muted: ;
+  --color-surface: ;
+
+  --color-surface-button: ;
+  --color-text-button: ;
+}
+
+/* General */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+/* Theme */
+[data-theme] {
+  background: var(--surface);
+}
+
+[data-theme="purple"] {
+}
+
+[data-theme="blue"] {
+}
+
+/* Components */
+.card {
+  padding: 2rem;
+}
+
+.card h2 {
+  color: var(--color-text-base);
+  font-size: 3rem;
+}
+
+.card p {
+  color: var(--color-text-muted);
+}
+
+.card a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--color-surface-button);
+  color: var(--color-text-button);
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+/* Utils */
+.flow > * + * {
+  margin-top: 1rem;
+}
