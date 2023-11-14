@@ -14,12 +14,12 @@
   --blue-800: #00355e;
 
   /* Alias Tokens */
-  --color-text-base: ;
-  --color-text-muted: ;
-  --color-surface: ;
+  --color-text-base: var(--gray-800);
+  --color-text-muted: var(--gray-400);
+  --color-surface: var(--white);
 
-  --color-surface-button: ;
-  --color-text-button: ;
+  --color-surface-button: var(--purple-500);
+  --color-text-button: var(--white);
 }
 
 /* General */
@@ -30,13 +30,25 @@ body {
 
 /* Theme */
 [data-theme] {
-  background: var(--surface);
+  background: var(--color-surface);
 }
 
 [data-theme="purple"] {
+  --color-text-base: var(--purple-50);
+  --color-text-muted: var(--purple-200);
+  --color-surface: var(--purple-500);
+
+  --color-surface-button: var(--white);
+  --color-text-button: var(--purple-500);
 }
 
 [data-theme="blue"] {
+  --color-text-base: var(--blue-50);
+  --color-text-muted: var(--blue-100);
+  --color-surface: var(--blue-800);
+
+  --color-surface-button: var(--white);
+  --color-text-button: var(--blue-800);
 }
 
 /* Components */
